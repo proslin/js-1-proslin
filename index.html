@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+      //Задача 1
+        
+        var Tc=parseInt(prompt("Введите температуту в градусах Цельсия"));
+     if (isNaN(Tc)) {
+         alert("Введите число!");
+     } else {
+       var Tf=(9/5)*Tc+32;
+        alert(Tf + " Градусов по Фаренгейту");  
+     }
+        
+    //Задача 2 
+    var name, admin;
+      name="Василий";
+        admin=name;
+        alert(admin);
+        
+    //Задача 3
+    var a=parseInt(prompt("Введите значение а")); 
+    var b=parseInt(prompt("Введите значение b")); 
+    if (isNaN(a)||isNaN(b)) { 
+        alert("Введите число!"); 
+    } else { 
+        a=a+b;
+        b=a-b; 
+        a=a-b;
+        alert("Значение а= "+a+" значение b= "+b); 
+    }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
