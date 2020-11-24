@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+      /* задача 1
+        var a = 1, b = 1, c, d;
+        c = ++a; alert(c);           // 2 префиксная форма записи сперва увеличиваем значение а, потом присваиваем его c
+        d = b++; alert(d);           // 1 постфиксная запись, сперва присваеваем d текущее значение переменной b а потом b увеличиваем
+        c = (2+ ++a); alert(c);      // 5 на данном этапе после увеличения значения a в первой строке оно равно 2.Затем мы увеличиваем его еще на единицу и прибавляем 2 - итого 5
+        d = (2+ b++); alert(d);      // 4 значение b =2 после выполнения 2 строки. В скобках мы сначала складываем текущее значение переменной b + 2 и присваиваем это переменной d, а затем b увеличиваем на 1.
+        alert(a);                    // 3 к переменной а два раза прибавляли единицу
+        alert(b);                    // 3 к переменной b два раза прибавляли единицу
+      */
+        
+        /* задача 2
+          var a = 2;
+          var x = 1 + (a *= 2); в данном примере x=5. То, что в скобках префиксная запись a=a*2 (=4), х=1+4=5.
+        */
+        
+        // задача 3
+        console.log("Задача 3");
+        var min = -10, max = 10;
+       var a= Math.floor(Math.random() * (max - min + 1)) + min;
+       var b= Math.floor(Math.random() * (max - min + 1)) + min; 
+        console.log("a=" +a);
+        console.log("b=" +b);
+        if (a>=0&&b>=0) {console.log("a-b=" + (a-b));}
+        else if (a<0&&b<0) {console.log("a*b=" + (a*b));}
+        else {console.log("a+b=" + (a+b));}
+        
+        //задача 4
+        console.log("Задача 4");
+        var a=parseInt(Math.random()*15+0);
+        console.log("Случайное число = "+a);
+        switch (a) {
+            case 0:
+                console.log(0);
+            case 1:
+                console.log(1);
+            case 2:
+                console.log(2);
+            case 3:
+                console.log(3);
+            case 4:
+                console.log(4);
+            case 5:
+                console.log(5);
+            case 6:
+                console.log(6);
+            case 7:
+                console.log(7);
+            case 8:
+                console.log(8); 
+            case 9:
+                console.log(9);
+            case 10:
+                console.log(10);
+            case 11:
+                console.log(11);
+            case 12:
+                console.log(12);
+            case 13:
+                console.log(13);
+            case 14:
+                console.log(14);
+            case 15:
+                console.log(15);               
+        }
+    </script>
+      
+       <script>    
+        //задача 5
+           
+        function addition(x,y)
+        {
+            return x+y;
+        }
+        
+        function subtraction(x,y)
+        {
+            return x-y;
+        }
+        function division(x,y)
+        {
+            return x/y;
+        }
+        function multiplication(x,y)
+        {
+            return x*y;
+        }
+          //задача 6
+           function mathOperation(arg1, arg2, operation)
+           {
+               switch (operation) {
+                   case "+":
+                       return addition(arg1,arg2);
+                       break;
+                   case "-":
+                   return subtraction(arg1,arg2);
+                       break;
+                   case "/":
+                    return division(arg1,arg2);
+                       break;
+                   case "*":
+                     return multiplication(arg1,arg2); 
+                       break;
+                    default :
+                       alert("Введите знак арифметической операции");
+                       break;
+               }
+           }
+           console.log("задача 6");
+           var a=+prompt("Введите а");
+           var b=+prompt("Введите b");
+           var sign=prompt("Введите арифметическую операцию");
+           console.log("Результат выполнения функции " +a+sign+b+"="+mathOperation(a,b,sign));        
+    </script>
+    <script>
+        
+        //задание 7
+        console.log("задача 8");
+        console.log("null=0 " + (null==0));
+        console.log("null>0 " + (null>0));
+        console.log("null>=0 " + (null>=0));
+        console.log("null<0 " + (null<0));
+        console.log("null<=0 " + (null<=0));
+        console.log("null!=0 " + (null!=0));
+        //при сравнении null преобразуется в число 0, потому null>=0 истинно, а выражение null>0 ложно. для нестрогого равенства значения null действует правило оно равно только undefind и ничему другому. undefined==null, null==0 ложно. 
+        // задание 8
+        function power(val,pow)
+        {
+            if (pow!=1) {
+                return val*=power(val, pow-1);
+            } else {
+                return val;
+            }
+          }  
+        console.log("задача 8");
+        var val=+prompt("Введите число для возведения в степень");
+        var pow=+prompt("Введите степень");
+        console.log(val+" в степени "+pow+" = "+power(val,pow));   
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
