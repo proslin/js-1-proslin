@@ -1,0 +1,21 @@
+<script>
+ var i=2, j;
+    var flag=false;
+    while (i<100){
+     j=i;
+        while (j>1){
+            if ((i%j==0)&&(i!=j)) {
+                flag=false;
+                j--;
+                break;
+            } else {
+             
+                flag=true;
+            }
+            j--;   
+            
+        }
+        if (flag) {console.log(i)};
+            i++;
+ }
+</script>
