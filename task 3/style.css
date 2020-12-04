@@ -1,0 +1,96 @@
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: #C7B299;
+}
+td {
+   border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;   
+    /* background-image: url(chess-figure.png); 
+    background-repeat: no-repeat;*/
+    
+}
+
+.peshka {
+  
+    background-image: url(chess-figure.png);    
+    background-position: -255px -60px; 
+    
+}
+
+.peshkaW {
+ background-image: url(chess-figure.png);    
+ background-position: -255px -5px;    
+}
+
+.ladya {
+  background-image: url(chess-figure.png);    
+ background-position: -205px -60px;  
+}
+
+.kon {
+  background-image: url(chess-figure.png);    
+ background-position: -155px -60px;  
+}
+
+.slon {
+   background-image: url(chess-figure.png);    
+ background-position: -105px -60px;  
+}
+
+.ferz {
+   background-image: url(chess-figure.png);    
+ background-position: -53px -60px;  
+}
+
+.korol {
+   background-image: url(chess-figure.png);    
+ background-position: 0px -60px;  
+}
+
+.ladyaW {
+  background-image: url(chess-figure.png);    
+ background-position: -205px -5px;  
+}
+
+.konW {
+  background-image: url(chess-figure.png);    
+ background-position: -155px -5px;  
+}
+
+.slonW {
+   background-image: url(chess-figure.png);    
+ background-position: -105px -5px;  
+}
+
+.ferzW {
+   background-image: url(chess-figure.png);    
+ background-position: -53px -5px;  
+}
+
+.korolW {
+   background-image: url(chess-figure.png);    
+ background-position: 0px -5px;  
+}
+
+
+
+tr:nth-child(9), tr:nth-child(8) {
+    color: white;  
+}
+
+tr:first-child {
+ transform: rotate(180deg);
+}
+
+td:last-child {
+ transform: rotate(180deg);
+    color: black;
+}
+td:first-child {
+    color: black;
+}
+

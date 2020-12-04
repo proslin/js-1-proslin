@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chessDesk"></div> 
+   <script>
+     var table=document.createElement("table");
+       var tr, td;
+       var char='ABCDEFGH';
+       for (var i=0;i < 10;i++){
+           tr=document.createElement("tr");
+           table.append(tr);
+           for(var j=0;j < 10;j++){
+               td=document.createElement("td");      
+               if (i==9&&j>0&&j<9){
+                   td.innerText=char[j-1];
+               } else if (j==0&&i>0&&i<9||j==9&&i>0&&i<9){
+                 td.innerText=9-i;  
+               }else if(i==0&&j>0&&j<9){
+                   td.innerText=char[8-j];
+               } else if (i==2){
+                 td.setAttribute("class","peshka")
+               }else if (i==7){
+                  td.setAttribute("class","peshkaW")  
+               } else if(i==1) {
+                   if (j==1||j==8) {
+                     td.setAttribute("class","ladya");  
+                   }else if (j==2||j==7){
+                     td.setAttribute("class","kon");    
+                   }else if (j==3||j==6){
+                      td.setAttribute("class","slon");  
+                   }else if (j==4){
+                      td.setAttribute("class","ferz");  
+                   }else if (j==5){
+                      td.setAttribute("class","korol"); 
+                   }     
+                 }  else if(i==8) {
+                 if (j==1||j==8) {
+                     td.setAttribute("class","ladyaW");  
+                   }else if (j==2||j==7){
+                     td.setAttribute("class","konW");    
+                   }else if (j==3||j==6){
+                      td.setAttribute("class","slonW");  
+                   }else if (j==4){
+                      td.setAttribute("class","ferzW");  
+                   }else if (j==5){
+                      td.setAttribute("class","korolW"); 
+                   }       
+               }
+               tr.append(td);
+               if (i%2==0&&j%2!=0&&i>0&&j>0&&j<9){
+               
+                   td.style.backgroundColor="brown";
+                   } else if (i%2!=0&&j%2==0&&i>0&&j>0&&i<9){
+                    td.style.backgroundColor="brown";   
+                   }
+              }
+           } 
+       document.getElementsByClassName("chessDesk")[0].append(table);
+    </script>
+</body>
+</html>

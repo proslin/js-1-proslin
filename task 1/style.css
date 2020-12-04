@@ -1,0 +1,20 @@
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td {
+   border: 1px solid black;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    
+}
+
+tr:first-child {
+ transform: rotate(180deg);
+}
+
+td:last-child {
+ transform: rotate(180deg);
+}
