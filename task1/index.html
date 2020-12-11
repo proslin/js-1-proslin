@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <div>
+       <img src="small/1.JPG" id="img_1" alt="1">
+       <img src="small/2.JPG" id="img_2" alt="2">
+       <img src="small/3.JPG" id="img_3" alt="3">
+   </div>
+   <div id="big">
+       
+   </div>
+    <script>
+        function f(e){
+            var big=document.getElementById("big");
+            big.innerHTML="";
+            var bigPic=new Image();            
+            //bigPic.id="bigImg";
+            var smallPic=e.target;
+            bigSrc='big/'+smallPic.id.split("_")[1]+'.jpg';
+            bigPic.src=bigSrc;
+            big.append(bigPic);
+            bigPic.onerror=function(){
+                alert("файл не обнаружен");
+            }
+        }
+    var smallImg = document.querySelectorAll("img");
+        for (var item of smallImg){
+            item.onclick=f;
+        }
+    </script>
+</body>
+</html>
