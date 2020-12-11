@@ -1,0 +1,202 @@
+body{
+    background-color: #f8f8f8;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    background-color: darkseagreen;
+    height: 70px;
+}
+.footer{
+    background-color: darkgray;
+    height: 100px;
+    text-align: right;
+    clear: both;
+     padding: 20px;
+    box-sizing: border-box;
+}
+.content{
+    background-color: #E1E0E1;
+    float: left;
+    width: 1000px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    float: left;
+    background: url('img/logo.svg') no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+    margin-left: 50px
+}
+.menu{
+    float: right;
+}
+.menu li{
+    color: darkgreen;
+    list-style-type: none;
+    font-style: italic;
+    font-size: 20px;    
+    width: 200px;
+    text-align: center;
+    margin-top: 25px;
+    float: left;
+}
+.menu > li{
+    width: 200px;
+    height: 25px;
+    border: 1px solid darkgreen;
+}
+.menu li a{
+    color: darkgreen;
+    width: 100%;
+    height: 25px;
+    display: block;
+    text-decoration: none;
+}
+.menu li a:hover{
+    color: #1896FF;
+}
+.menu li a:active{
+    color: red;
+}
+.MainHead{
+   color: darkgrey;
+    text-align:center; 
+}
+.catalog{
+    display: flex;
+    justify-content: space-between;
+}
+.product{
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.ProductIMG{
+    outline: 10px solid darkgreen;
+    margin: 10px;
+    float: left;
+}
+.ProductIMG:hover{
+   outline: none; 
+}
+
+.prodImg {
+height: 100px;
+    display: block;
+}
+
+.buyBtn {
+    margin-left: 20px;
+}
+
+.totalAmount {
+    display: block;
+}
+
+.heading3{
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.description:first-letter,.detailedDescription:first-letter,.Care:first-letter,
+.Propagation:first-letter{
+    font-family: sans-serif;
+    font-size: 30px;
+}
+.description{
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.button{
+    text-align: center;
+    margin-top: 50px;
+}
+.b1{
+    color: darkgreen;
+    background: darkseagreen;
+    margin: 0 auto;
+    
+}
+.b1:hover{
+    background: lightgreen;
+}
+.b1:active{
+    background: #707070;
+    color: aliceblue;
+}
+.detailedDescription{
+    color:#484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.Characteristics{
+    list-style-image: url(img/icons8-herb-48.png);
+    font-size: 18px;
+    color: mediumseagreen;
+}
+.prodcharacter{
+    clear: both;
+}
+.Care{
+  font-size: 16px;  
+}
+.purchase{
+  width: 500px;  
+    border: 1px solid #000;
+    border-collapse: collapse;
+
+}
+.purchase td{
+    border: 1px solid #000;
+}
+.purchase th{
+    text-align: left;
+    height: 50px;
+}
+ ::-webkit-input-placeholder { color:darkgray; font-family: Georgia;}
+::-moz-placeholder { color:#707070; font-family: Georgia;}
+:-ms-input-placeholder { color:#707070; font-family: Georgia;}
+:-moz-placeholder { color:#707070; font-family: Georgia;}
+.Name,input[type="email"],.theme,.message{
+    width: 300px;
+    font-weight:  bolder;
+    background-color: lightgray; /* Цвет фона */
+    color: darkslategrey;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 10px
+}
+.Name{
+  margin-left: 17px;  
+}
+input,.message{
+    text-transform:capitalize;
+    
+}
+input[type="email"]:focus{
+    background-color: darkseagreen;
+    color: black;
+}    
+.theme{
+    width: 300px;
+    margin-left: 14px;
+}
+.message{
+    width: 450px;
+    height: 100px;
+    margin-left: 20px;
+}
+iframe{
+    width: 100%;
+    height: 374px;
+}

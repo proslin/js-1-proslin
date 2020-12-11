@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+   <div id="slider">
+       <img src="img/Syringa.jpg" class="first" alt="">
+       <img src="img/krasavica_moscvi.jpg" alt="">
+       <img src="img/madam_lemuan.jpg" alt="">
+       <img src="img/sensaciya.jpg" alt="">
+       <button id="prev">Назад</button>
+       <button id="next">Вперед</button>
+       
+   </div>
+   
+   <script>
+     var btnNext=document.querySelector("#next");
+       var btnPrev=document.querySelector("#prev");
+       //console.log(btnNext);
+       var images=document.querySelectorAll("img");
+       var i=0;
+       btnPrev.onclick=function() {
+           images[i].style.display="none";
+           i--;
+           if (i==-1){
+               i=images.length-1;
+           }
+           images[i].style.display="block";
+       }
+       
+       btnNext.onclick=function() {
+           images[i].style.display="none";
+           i++;
+           if (i>=images.length) {
+               i=0;
+       }
+           images[i].style.display="block";
+       }
+   </script>
+    
+</body>
+</html>
